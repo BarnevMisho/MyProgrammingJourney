@@ -1,0 +1,15 @@
+cards = input().split()
+shuffles = int(input())
+deck_half_length = int(len(cards)/2)
+
+for _ in range(shuffles):
+    new_deck = []
+    left_deck = cards[0:deck_half_length]
+    right_deck = cards[deck_half_length:]
+    for i in range(deck_half_length):
+        new_deck.append(left_deck[i])
+        new_deck.append(right_deck[i])
+
+    cards = new_deck
+
+print(new_deck)
