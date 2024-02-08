@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AboutMe</title>
+</head>
+<body>
+        <p>
+            My name is Mihail Barnev. I am 19 year old and I am a future milionere
+        </p>
+        <img src="https://scontent-zrh1-1.xx.fbcdn.net/v/t1.15752-9/416081403_7073185962769950_568802923350614820_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=W2bmiXG_S-UAX-5ZV-p&_nc_ht=scontent-zrh1-1.xx&oh=03_AdSBno96ENigpx7O5-C7ARTmumQRbqDvjZIKqjvyi-U15w&oe=65E218B2" style="width: 256px;" />
+
+        <p>
+            <strong>Achievements:</strong>
+            <ul>
+                <li>Girlfriend</li>
+                <li>Business owner</li>
+                <li>Happy Family</li>
+            </ul>
+        </p>
+</body>
+</html>
