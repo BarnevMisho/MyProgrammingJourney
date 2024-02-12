@@ -1,0 +1,7 @@
+def list_even_numbers(numbers):
+    numbers_as_list = list(map(int,numbers.split()))
+    even_numbers = [num for num in numbers_as_list if num % 2 == 0]
+    return even_numbers
+
+numbers = input()
+print(list_even_numbers(numbers))
