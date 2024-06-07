@@ -1,0 +1,25 @@
+from functools import reduce
+
+operators = ["*", "+", "-", "/"]
+final_result = 0
+result = 0
+queue = input().split()
+op_id = 0
+
+for i in range(len(queue)):
+    if queue[i] in operators:
+        if op_id == 0:
+            current_queue = [int(x) for x in queue[op_id:i]]
+        else:
+            current_queue = [result] + [int(x) for x in queue[op_id:i]]
+        if queue[i] == "*":
+            result = reduce(lambda x,y: x*y, current_queue)
+        elif queue[i] == "+":
+            result = reduce(lambda x,y: x+y, current_queue)
+        elif queue[i] == "-":
+            result = reduce(lambda x,y: x-y, current_queue)
+        elif queue[i] == "/":
+            result = reduce(lambda x,y: x//y, current_queue)
+        op_id = i + 1
+
+print(result)
